@@ -3,6 +3,7 @@
 var React = require('react');
 var ReactNative = require('react-native');
 
+var SearchPage = require('./SearchPage');
 
 var styles = ReactNative.StyleSheet.create({
   text: {
@@ -31,7 +32,7 @@ class PropertyFinderApp extends React.Component {
         style={styles.container}
         initialRoute={{
           title: 'Property Finder',
-          component: HelloWorld,
+          component: SearchPage,
         }}/>
     );
   }
